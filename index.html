@@ -6,21 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
   <!-- Popper JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
   <script src="https://use.fontawesome.com/95406a1587.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js"></script>
   <title>Bonga</title>
 </head>
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light" id="main-nav">
     <div class="header-row max-width-container" id="menu-logo">
       <!-- ======= Mobile nav toggle button ======= -->
       <button type="submit" id="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
@@ -51,9 +49,9 @@
       <nav class="nav-menu">
         <ul>
           <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="fa fa-user"></i> <span>About Us </span></a></li>
+          <li><a href="#about"><i class="fa fa-user"></i> <span>Services </span></a></li>
           <li><a href="#jobs"><i class="fa fa-tasks"></i><span> Jobs</span></a></li>
-          <li><a href="#teams"><i class="fa fa-users"></i>Our Team</a></li>
+          <li><a href="#teams"><i class="fa fa-users"></i>About us</a></li>
           <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Us</a></li>
 
         </ul>
@@ -79,13 +77,15 @@
   <!-- =======End Home ======= -->
   <!-- ======= popular services ======= -->
   <div class="popular-services">
-    <h2>Popular professional services</h2>
+    <h2 id="popular-title">Popular professional services</h2>
+  </div>
     <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride ="carousel">
       <!--Indicators-->
       <ol class="carousel-indicators">
         <li data-target="#multi-item-carousel" data-slide-to="0" class="active"></li>
         <li data-target="#multi-item-carousel" data-slide-to="1"></li>
         <li data-target="#multi-item-carousel" data-slide-to="2"></li>
+        <li data-target="#multi-item-carousel" data-slide-to="4"></li>
       </ol>
       <!--/.Indicators-->
       <div class="carousel-inner" role="listbox">
@@ -170,11 +170,37 @@
           </div>
         </div>
       </div>
-  
     </div>
     <hr>
-  </div>
-  <!-- ======= Home ======= -->
+  <!-- ======= popular-services ======= -->
+  <!-- ======= popular-services ======= -->
+  <div class="contianer" id="about-us">
+    <div class="row">
+      <div class="col-md-6"> </div>
+      <div class="col-md-6">
+        <h1 id="abtus-col">A whole world of freelance talent at your fingertips</h1>
+        <div id="about-us-item">
+          <div>
+            <strong><i class="fa fa-check"></i> The best for every budget</strong>
+            <p>Find high-quality services at every price point. No hourly rates, just project-based pricing.</p>
+          </div>
+          <div>
+            <strong><i class="fa fa-check"></i> Quality work done quickly</strong>
+            <p>Find the right freelancer to begin working on your project within minutes.</p>
+          </div>
+          <div>
+            <strong><i class="fa fa-check"></i> Protected payments, every time</strong>
+            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the work.</p>
+          </div>
+          <div>
+            <strong><i class="fa fa-check"></i> 24/7 support</strong>
+            <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+
+  </div>
 </body>
 </html>
