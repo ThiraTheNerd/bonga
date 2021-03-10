@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 /*--------------------------------------------------------------
 # Top-nav bar
 --------------------------------------------------------------*/
@@ -15,7 +16,8 @@
 #menu-icon{
   font-family: 'Lemon', cursive;
   font-size: 42px; 
-  border: none;  
+  border: none;
+  color: black;  
 }
 /*--------------------------------------------------------------
 # side-nav-bar
@@ -32,6 +34,7 @@
   padding: 0.15px;
   background-color: #040b14;
   overflow-y: auto;
+  display: none;
 }
 #header .profile img {
   margin: 15px auto;
@@ -117,4 +120,38 @@ header #close-nav{
 }
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
   color: orange;
+}
+/*--------------------------------------------------------------
+# Home Section
+--------------------------------------------------------------*/
+div#home{
+  text-align:left;
+  height: 600px;
+  padding-top: 150px;
+  padding-left: 650px;
+  background-image: url("../images/pexels-andrea-piacquadio-3777559.jpg");
+  background-size: cover;
+}
+div h1{
+  font-family: 'Fredoka One', cursive;
+
+}
+div h1 span#freelance{
+  color: orange;
+  font-size: 35px;
+}
+.popular ul {
+  list-style-type: none;
+}
+.popular ul li{
+  float: left;
+  margin: 8px;
+  border: 2px solid rgb(62, 196, 58);
+  border: 2px solid orange;
+  border-radius: 60px;
+  padding: 2px;
+}
+.popular ul li:hover{
+  background-color: orange;
+  color: black;
 }
