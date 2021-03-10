@@ -122,7 +122,6 @@ header #close-nav{
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
   color: orange;
 }
-<<<<<<< HEAD
 /*Contact-Section*/
 
 .contact {
@@ -291,7 +290,6 @@ ul li:hover .fab:nth-child(1) {
     opacity: 1;
     color: white;
 }
-=======
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
@@ -347,4 +345,3 @@ div #popular-title{
 #about-us .row{
   padding: 40px;
 }
->>>>>>> ft-landing-page
