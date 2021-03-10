@@ -18,7 +18,7 @@
     font-family: Arial;
   }
   
-  /* Center website */
+ 
   .main {
     max-width: 1000px;
     margin: auto;
@@ -33,55 +33,158 @@
     margin: 8px -16px;
   }
   
-  /* Add padding BETWEEN each column (if you want) */
+  
   .row,
   .row > .column {
     padding: 8px;
   }
   
-  /* Create three equal columns that floats next to each other */
+ 
   .column {
     float: left;
     width: 33.33%;
-    display: none; /* Hide columns by default */
+    display: none; 
   }
   
-  /* Clear floats after rows */
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Content */
+
   .content {
     background-color: white;
     padding: 10px;
   }
   
-  /* The "show" class is added to the filtered elements */
+
   .show {
     display: block;
   }
   
-  /* Style the buttons */
   .btn {
-    border: none;
+    border:blueviolet;
     outline: none;
     padding: 12px 16px;
     background-color: white;
     cursor: pointer;
+    border-radius: 30px;
   }
   
-  /* Add a grey background color on mouse-over */
   .btn:hover {
     background-color: #ddd;
   }
   
-  /* Add a dark background color to the active button */
+
   .btn.active {
     background-color: #666;
      color: white;
   }
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  /*
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #380474;
+    z-index: 9;
+  }
+  
 
+  .form-container {
+    max-width: 60%x;
+    padding: 20px;
+    background-color: rgb(60, 11, 175);
+  }
+  
+
+  .form-container input[type=text], .form-container input[type=date {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus, .form-container input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  .form-container .btn {
+    background-color: #4ca3af;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: rgb(255, 166, 0);
+  }
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+*/
+  #contactForm {
+    background-color: #b8e3ee;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  input.invalid {
+    background-color: #fc1707;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  /* Made circles that indicate the steps of the form:using the  spans */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  .step.finish {
+    background-color: #984caf;
+  }
   
