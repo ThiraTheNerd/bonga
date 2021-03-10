@@ -10,7 +10,14 @@ $(document).ready(function() {
         } else {
             alert("Please enter your name and email!");
         }
-
     });
+  });
 
+$(document).ready(function(){
+  $("#close-nav").click(function(){
+    $("#header").fadeOut();
+  });
+  $("#menu-icon").click(function(){
+    $("#header").fadeIn();
+  });
 });
