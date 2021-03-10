@@ -54,3 +54,115 @@ button {
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
+
+
+/*footer-section*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+ul li {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
+    border: 3px solid;
+    border-radius: 50%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .5s;
+}
+
+ul li .fab {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+ul li:nth-child(1) {
+    border-color: #3b5998;
+}
+
+ul li:nth-child(1) .fab {
+    color: #3b5998;
+}
+
+ul li:nth-child(2) {
+    border-color: #38A1F3;
+}
+
+ul li:nth-child(2) .fab {
+    color: #38A1F3;
+}
+
+ul li:nth-child(3) {
+    border-color: #FF0000;
+}
+
+ul li:nth-child(3) .fab {
+    color: #FF0000;
+}
+
+ul li:nth-child(4) {
+    border-color: #d72888;
+}
+
+ul li:nth-child(4) .fab {
+    color: #d72888;
+}
+
+ul li:nth-child(5) {
+    border-color: grey;
+}
+
+ul li:nth-child(5) .fab {
+    color: grey;
+}
+
+
+/*hover effect*/
+
+ul li:hover:nth-child(1) {
+    background: #3b5998;
+}
+
+ul li:hover:nth-child(2) {
+    background: #38A1F3;
+}
+
+ul li:hover:nth-child(3) {
+    background: #FF0000;
+}
+
+ul li:hover:nth-child(4) {
+    background: #d72888;
+}
+
+ul li:hover:nth-child(5) {
+    background: grey;
+}
+
+ul li .fab:nth-child(1) {
+    left: 50%;
+    opacity: 2;
+}
+
+ul li:hover .fab:nth-child(1) {
+    left: 50%;
+    opacity: 1;
+    color: white;
+}
