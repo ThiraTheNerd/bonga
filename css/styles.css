@@ -1,11 +1,24 @@
 /*Contact-Section*/
 
 .contact {
-    background-image: url(/images/coder.jpg);
+    background-image: url('../images/coder.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    /* text-align: center; */
+}
+
+.title {
+    padding: 6px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-family: 'Gabriela', serif;
 }
 
 input[type=text],
@@ -38,5 +51,6 @@ input[type=email],
 
 button {
     margin-left: 20%;
-    width: 60%;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
 }
