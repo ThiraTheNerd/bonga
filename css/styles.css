@@ -386,3 +386,9 @@ div #popular-title {
 
 
 /*Media queries*/
+
+@media (max-width: 500px) {
+    .popular ul li {
+        color: white;
+    }
+}
