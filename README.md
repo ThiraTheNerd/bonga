@@ -9,7 +9,7 @@ All  the user has to  do is sign in.
 * Open the folder in your editor.
 * To be able to leave messages users are encouraged to sign in. 
 # Screenshot of Webpage
- ![](/webscreen shot.png)
+ ![](webscreen shot.png)
 ## Technologies Used
 The technologies used to build this application are :
 1. HTML 
@@ -29,8 +29,9 @@ The technologies used to build this application are :
 ## FAQ
 **How Does the  form collect data?**
 <p>Answer: Upon clicking  “click to post “ a form  drops down  allowing the user  to  fill in their details including the job  description  and deadline. 
-The information is then  tallied on  a separate  table for  other users  who  visit.<p>
-## Contributors/
+The information is then  tallied on  a separate  table for  other users  who  visit.</p>
+
+## Contributors
 **@ThiraTheNerd
 **@Alicia-krynne
 **@Natasha1594
