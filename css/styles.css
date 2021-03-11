@@ -190,11 +190,16 @@
   color: darkorange;
 }
 #contactForm {
-  background-color: #ffffff;
+  background-image: url(/images/developer2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 100px auto;
   padding: 40px;
   width: 70%;
   min-width: 300px;
+  color: #e2aa0f;
+  text-transform: uppercase;
+  text-size-adjust: 30pt;
 }
 
 
