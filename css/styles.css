@@ -94,98 +94,146 @@
     width: 280px;
   }
   
-  .form-popup {
-    display: none;
-    position: fixed;
+  .container {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
     bottom: 0;
-    right: 15px;
-    border: 3px solid #380474;
-    z-index: 9;
-  }
-  
-
-  .form-container {
-    max-width: 60%x;
-    padding: 20px;
-    background-color: rgb(60, 11, 175);
-  }
-  
-
-  .form-container input[type=text], .form-container input[type=date {
+    left: 0;
+    right: 0;
+    height: 100%;
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgb(241, 186, 34);
   }
   
-  .form-container input[type=text]:focus, .form-container input[type=date]:focus {
-    background-color: #ddd;
-    outline: none;
+  .container:hover .overlay {
+    opacity: 1;
   }
   
-  
-  .form-container .btn {
-    background-color: #4ca3af;
+  .icon {
     color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
   
-  .form-container .cancel {
-    background-color: rgb(255, 166, 0);
+  .fa-user:hover {
+    color: #white;
   }
   
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
-
-/*
-  #contactForm {
-    background-color: #b8e3ee;
-    margin: 100px auto;
-    padding: 40px;
-    width: 70%;
-    min-width: 300px;
-  }
-  
-  input {
+  .fa {
     padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    font-family: Raleway;
-    border: 1px solid #aaaaaa;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  
   }
   
-  input.invalid {
-    background-color: #fc1707;
+
+  .fa:hover {
+    opacity: 0.7;
   }
   
-  .tab {
-    display: none;
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
   }
   
-  Made circles that indicate the steps of the form:using the  spans
-  .step {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
+ 
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
   }
-  
-  .step.active {
-    opacity: 1;
+  .fa-dribbble {
+    background: #ea4c89;
+    color: white;
   }
-  
-  .step.finish {
-    background-color: #984caf;
-  } 
-  */
+    .fa-stumbleupon {
+    background: #eb4924;
+    color: white;
+  }
+  #reach{
+    border: 5px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: auto;
+    border-image:0pt;
+    border-color: darkcyan;
+  }
+  .images{
+    max-width: 50%;
+    float: right;
+  }
+#freelance{
+  text-align: center;
+  font-family: inherit;
+  color: darkorange;
+}
+#contactForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #e2aa0f;
+}
+
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+
+.tab {
+  display: none;
+}
+
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #f7901b;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/
+.step.active {
+  opacity: 1;
+}
+
+
+.step.finish {
+  background-color: #4CAF50;
+}
