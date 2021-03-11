@@ -55,21 +55,21 @@
                 <img src="images/bonga.jpeg" alt="" class="img-fluid rounded-circle">
                 <h1 class="text-light"><a href="index.html">Bonga</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="fa fa-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://google-plus.com" class="google-plus"><i class="fa fa-skype"></i></a>
+                    <a href="https://linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
 
             <nav class="nav-menu">
                 <ul>
-                    <li class="active"><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about"><i class="fa fa-user"></i> <span>Services </span></a></li>
-                    <li><a href="#jobs"><i class="fa fa-tasks"></i><span> Jobs</span></a></li>
-                    <li><a href="#teams"><i class="fa fa-users"></i>About us</a></li>
-                    <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Us</a></li>
+                    <li class="active"><a href="#home"><i class="fa fa-home"></i> <span>Home</span></a></li>
+                    <li><a href="#popular-title"><i class="fa fa-user"></i> <span>Services </span></a></li>
+                    <li><a href="#about-us"><i class="fa fa-users"></i><span> About us</span></a></li>
+                    <li><a href="#post-job-section"><i class="fa fa-tasks"></i>Jobs</a></li>
+                    <li><a href="#contact-form"><i class="fa fa-envelope"></i>Contact Us</a></li>
 
                 </ul>
             </nav>
@@ -221,57 +221,113 @@
 
         </div>
     </div>
-    <!-- ======= end-about-us ======= -->
-    <!--Contact-section-->
-    <div class="contact-section">
-        <div class="container-fluid contact" id="contact-form">
-            <div class="row" style="margin-left: 140px">
-                <div class="col-md-12">
-                    <h2>CONTACT US</h2>
-
-                    <form id="form34A" action="https://gmail.us1.list-manage.com/subscribe/post" method="POST">
-                        <input type="hidden" name="u" value="ea3a90777ca5a97ecea842a16">
-                        <input type="hidden" name="id" value="765051e63a">
-                        <div class="form-group form-inline">
-                            <input type="text" class="form-control" placeholder="Name...." name="MERGE1" id="MERGE1" size="25" value="">
-                            <input type="email" class="form-control" placeholder="Email...." autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" rows="8" id="comment" placeholder="Your message here...."></textarea>
-                            <br>
-                            <br>
-                            <div style="margin-left: 220px">
-                                <button type="submit" style="background-color: red" class="btn btn-primary">Submit</button>
-                            </div>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!--Footer-->
-        <footer class="container" id="footer">
-            <ul>
-                <li>
-                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com"><i class="fab fa-github"></i></a>
-                </li>
-            </ul>
-        </footer>
+  <!-- ======= Post-a-job ======= -->
+  <div class="flex-box" id="post-job-section">
+    <h2 id="post-job"> <i class="far fa-arrow-alt-circle-down"></i> Click to Post a job <i class="fa fa-scroll"></i></h2>
+    <div class="row">
+      <div class= "col-md-5">
+        <!-- <button class="btn btn-warning" id="close-form">Close Form</button> -->
+      </div>
+      <div class="col-md-6" id="col-form">
+        <form id="jobpost-form"> 
+          <label for="client-name">Name</label>
+          <input class = "form-control mb-3" type="name" id="client-name" placeholder="Bob Clerk" value ="">
+          <label for="client-email">Email</label>
+          <input class = "form-control mb-3" type="email" id="client-email" placeholder="bobclerk@gmail.com" value="">
+          <label for="select">Select Job category</label>
+          <select class="browser-default custom-select custom-select-md mb-3 name" id="category">
+            <option value="graphics-design">Graphics and Design</option>
+            <option value="software-eng">Sofware Engineering</option>
+            <option value="digital-mkting">Digital Marketing</option>
+            <option value="data-entry">Data Entry </option>
+            <option value="seo">SEO</option>
+            <option value="payment-intergration">Payment Intergration</option>
+            <option value="wordpress-website">Wordpress Website</option>
+            <option value="system-dev">System Development</option>
+          </select>
+          <label for="select">Job Description</label>
+          <textarea class= "form-control mb-3" id="job-description" rows ="8" placeholder="Type in the job Description"></textarea>
+          <label for="client-budget">Budget in Ksh</label>
+          <input class = "form-control mb-3" type="number" id="client-budget">
+          <label for="deadline-date">Deadline</label>
+          <input class = "form-control mb-3" type="date" id="deadline-date" value="">
+          <div><button type="submit" class="btn btn-success" id="post-job">Post</button></div>
+          <div id="form-error">Please fill out all the fields to proceed</div>
+        </form>
+      </div>
     </div>
-    <!--End Contact-section-->
+  </div>
+  <!-- ======= Jobs section ======= -->
+  <div class="flex-box" id="jobs">
+    <table class="table">
+      <thread>
+        <tr> 
+          <th scope="col">Category</th>
+          <th scope="col">Budget (Ksh)</th>
+          <th scope="col">Deadline</th>
+          <th scope="col">Client Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thread>
+      <tbody id="job-items">
+        <tr>
+          
+          <td id="job-category"></td>
+          <td id="job-budget"></td>
+          <td id="job-deadline"></td>
+          <td id="name"></td>
+          <td id="email"></td>
+        </tr>                               
+      </tbody>
+    </table>
+  </div>
+  <!--Contact-section-->
+  <div class="contact-section">
+    <div class="container-fluid contact" id="contact-form">
+      <div class="row" style="margin-left: 140px">
+        <div class="col-md-12">
+          <h2>CONTACT US</h2>
+          <form id="form34A" action="https://gmail.us1.list-manage.com/subscribe/post" method="POST">
+            <input type="hidden" name="u" value="ea3a90777ca5a97ecea842a16">
+            <input type="hidden" name="id" value="765051e63a">
+            <div class="form-group form-inline">
+              <input type="text" class="form-control" placeholder="Name...." name="MERGE1" id="MERGE1" size="25" value="">
+              <input type="email" class="form-control" placeholder="Email...." autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="8" id="comment" placeholder="Your message here...."></textarea>
+              <br>
+              <br>
+              <div style="margin-left: 220px">
+                <button type="submit" style="background-color: red" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Contact-section-->
+  <!--Footer-->
+  <footer class="container" id="footer">
+    <ul>
+      <li>
+          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+          <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+          <a href="https://github.com"><i class="fab fa-github"></i></a>
+      </li>
+    </ul>
+  </footer>
+  <!--End Footer-->
 </body>
-
 </html>
