@@ -9,7 +9,7 @@ All  the user has to  do is sign in.
 * Open the folder in your editor.
 * To be able to leave messages users are encouraged to sign in. 
 # Screenshot of Webpage
- ![](webscreen shot.png)
+ ![](webshot.png)
 ## Technologies Used
 The technologies used to build this application are :
 1. HTML 
