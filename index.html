@@ -216,6 +216,66 @@
     </div>
   </div>
   <!-- ======= end-about-us ======= -->
+  <!-- ======= Post-a-job ======= -->
+  <div class="flex-box" id="post-job-section">
+    <h2 id="post-job"> <i class="far fa-arrow-alt-circle-down"></i> Click to Post a job <i class="fa fa-scroll"></i></h2>
+    <div class="row">
+      <div class= "col-md-5">
+        <!-- <button class="btn btn-warning" id="close-form">Close Form</button> -->
+      </div>
+      <div class="col-md-6" id="col-form">
+        <form id="jobpost-form"> 
+          <label for="client-name">Name</label>
+          <input class = "form-control mb-3" type="name" id="client-name" placeholder="Bob Clerk" value ="">
+          <label for="client-email">Email</label>
+          <input class = "form-control mb-3" type="email" id="client-email" placeholder="bobclerk@gmail.com" value="">
+          <label for="select">Select Job category</label>
+          <select class="browser-default custom-select custom-select-md mb-3 name" id="category">
+            <option value="graphics-design">Graphics and Design</option>
+            <option value="software-eng">Sofware Engineering</option>
+            <option value="digital-mkting">Digital Marketing</option>
+            <option value="data-entry">Data Entry </option>
+            <option value="seo">SEO</option>
+            <option value="payment-intergration">Payment Intergration</option>
+            <option value="wordpress-website">Wordpress Website</option>
+            <option value="system-dev">System Development</option>
+          </select>
+          <label for="select">Job Description</label>
+          <textarea class= "form-control mb-3" id="job-description" rows ="8" placeholder="Type in the job Description"></textarea>
+          <label for="client-budget">Budget in Ksh</label>
+          <input class = "form-control mb-3" type="number" id="client-budget">
+          <label for="deadline-date">Deadline</label>
+          <input class = "form-control mb-3" type="date" id="deadline-date" value="">
+          <div><button type="submit" class="btn btn-success" id="post-job">Post</button></div>
+          <div id="form-error">Please fill out all the fields to proceed</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- ======= Jobs section ======= -->
+  <div class="flex-box" id="jobs">
+    <table class="table">
+      <thread>
+        <tr> 
+          <th scope="col">Category</th>
+          <th scope="col">Budget (Ksh)</th>
+          <th scope="col">Deadline</th>
+          <th scope="col">Client Name</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thread>
+      <tbody id="job-items">
+        <tr>
+          
+          <td id="job-category"></td>
+          <td id="job-budget"></td>
+          <td id="job-deadline"></td>
+          <td id="name"></td>
+          <td id="email"></td>
+        </tr>                               
+      </tbody>
+    </table>
+  </div>
   <!--Contact-section-->
   <div class="contact-section">
     <div class="container-fluid contact" id="contact-form">
