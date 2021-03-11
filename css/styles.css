@@ -1,131 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&display=swap');
+
 /*--------------------------------------------------------------
 # Top-nav bar
 --------------------------------------------------------------*/
-.navbar-brand{
-  font-family: 'Lemon', cursive;
-  font-size: 42px;  
+
+.navbar-brand {
+    font-family: 'Lemon', cursive;
+    font-size: 42px;
 }
-#logo-color{
-  color: orange;
+
+#logo-color {
+    color: orange;
 }
-#sign-in:hover{
-  color: rgb(105, 173, 2);
+
+#sign-in:hover {
+    color: rgb(105, 173, 2);
 }
-#menu-icon{
-  font-family: 'Lemon', cursive;
-  font-size: 42px; 
-  border: none;
-  color: black;  
+
+#menu-icon {
+    font-family: 'Lemon', cursive;
+    font-size: 42px;
+    border: none;
+    color: black;
 }
+
+
 /*--------------------------------------------------------------
 # side-nav-bar
 --------------------------------------------------------------*/
-#header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0.15px;
-  background-color: #040b14;
-  overflow-y: auto;
-  display: none;
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0.15px;
+    background-color: #040b14;
+    overflow-y: auto;
+    display: none;
 }
+
 #header .profile img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid #2c2f3f;
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
 }
-header .profile h1{
-  font-size: 24px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  text-emphasis: center;
-  text-align-last: center;
-  font-family: "Poppins", sans-serif;
+
+header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-emphasis: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
 }
-#header .profile h1 a, #header .profile h1 a:hover {
-  color: #fff;
-  text-decoration: none;
+
+#header .profile h1 a,
+#header .profile h1 a:hover {
+    color: #fff;
+    text-decoration: none;
 }
+
 #header .profile .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #212431;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
 }
+
 #header .profile .social-links a:hover {
-  background: orange;
-  color: #fff;
-  text-decoration: none;
+    background: orange;
+    color: #fff;
+    text-decoration: none;
 }
-header #close-nav{
-  top: 0;
-  float: right;
-  font-size: 30px;
-  color: white;
-  padding: 8px;
-  background-color: #212431;
-  border-radius: 50%;
-  transition: 0.3s;
+
+header #close-nav {
+    top: 0;
+    float: right;
+    font-size: 30px;
+    color: white;
+    padding: 8px;
+    background-color: #212431;
+    border-radius: 50%;
+    transition: 0.3s;
 }
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-.nav-menu{
-  padding-top: 30px;
-}
-.nav-menu *{
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
+
+.nav-menu {
+    padding-top: 30px;
 }
 
-.nav-menu >ul >li{
-  position: relative;
-  white-space: nowrap;
-} 
-.nav-menu a{
-  display: flex;
-  align-items: center;
-  color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
+.nav-menu * {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
-.nav-menu a i{
-  font-size: 24px;
-  padding-right: 8px;
-  color: #6f7180;
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
 }
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  text-decoration: none;
-  color: #fff;
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
 }
-.nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: orange;
+
+.nav-menu a i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
 }
+
+.nav-menu a:hover,
+.nav-menu .active>a,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active>a i,
+.nav-menu li:hover>a i {
+    color: orange;
+}
+
+
 /*Contact-Section*/
 
 .contact {
-    background-image: url('../images/coder.jpg');
+    background-image: url('../images/robot1.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -290,58 +319,69 @@ ul li:hover .fab:nth-child(1) {
     opacity: 1;
     color: white;
 }
+
+
 /*--------------------------------------------------------------
 # Home Section
 --------------------------------------------------------------*/
-div#home{
-  text-align:left;
-  height: 600px;
-  padding-top: 150px;
-  padding-left: 650px;
-  background-image: url("../images/pexels-andrea-piacquadio-3777559.jpg");
-  background-size: cover;
-  margin-bottom: 70px;
-}
-div h1{
-  font-family: 'Fredoka One', cursive;
 
+div#home {
+    text-align: left;
+    height: 600px;
+    padding-top: 150px;
+    padding-left: 650px;
+    background-image: url("../images/pexels-andrea-piacquadio-3777559.jpg");
+    background-size: cover;
+    margin-bottom: 70px;
 }
-div h1 span#freelance{
-  color: orange;
-  font-size: 35px;
-}
-div #popular-title{
-  float: right;
-  margin-bottom: 20px;
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Fredoka One', cursive;
 
+div h1 {
+    font-family: 'Fredoka One', cursive;
 }
+
+div h1 span#freelance {
+    color: orange;
+    font-size: 35px;
+}
+
+div #popular-title {
+    float: right;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Fredoka One', cursive;
+}
+
 .popular ul {
-  list-style-type: none;
+    list-style-type: none;
 }
-.popular ul li{
-  float: left;
-  margin: 8px;
-  border: 2px solid rgb(62, 196, 58);
-  border: 2px solid orange;
-  border-radius: 60px;
-  padding: 2px;
+
+.popular ul li {
+    float: left;
+    margin: 8px;
+    border: 2px solid rgb(62, 196, 58);
+    border: 2px solid orange;
+    border-radius: 60px;
+    padding: 2px;
 }
-.popular ul li:hover{
-  background-color: orange;
-  color: black;
+
+.popular ul li:hover {
+    background-color: orange;
+    color: black;
 }
-#about-us{
-  background-color: rgb(245, 208, 140);
-  margin-top: 70px;
+
+#about-us {
+    background-color: rgb(245, 208, 140);
+    margin-top: 70px;
 }
-#about-us-item div strong{
-  font-size: 20px;
+
+#about-us-item div strong {
+    font-size: 20px;
 }
-#about-us-item{
-  margin-top: 30px;
+
+#about-us-item {
+    margin-top: 30px;
 }
-#about-us .row{
-  padding: 40px;
+
+#about-us .row {
+    padding: 40px;
 }
